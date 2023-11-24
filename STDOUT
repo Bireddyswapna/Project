@@ -1,0 +1,37 @@
+
+@Regression @Smoke
+Scenario: Navigate To GoodGuys website                              [90m# src/test/java/FeatureFile/FF_01Navigate.feature:4[0m
+  [32mGiven [0m[32mopen browser and enter url and navigate to GoodGuys website[0m [90m# StepDefination.SD_01NavigateToWbsite.open_browser_and_enter_url_and_navigate_to_good_guys_website()[0m
+  [32mThen [0m[32mget title and assert[0m                                         [90m# StepDefination.SD_01NavigateToWbsite.get_title_and_assert()[0m
+
+@Regression @Smoke @First
+Scenario:                                                           [90m# src/test/java/FeatureFile/FF_02StepsReusable.feature:4[0m
+  [32mGiven [0m[32mopen browser and enter url and navigate to GoodGuys website[0m [90m# StepDefination.SD_01NavigateToWbsite.open_browser_and_enter_url_and_navigate_to_good_guys_website()[0m
+  [32mThen [0m[32mClick on signup link from homepage[0m                           [90m# StepDefination.SD_02SignupPage.click_on_signup_link_from_homepage()[0m
+
+@Regression @Smoke @First
+Scenario:                                                           [90m# src/test/java/FeatureFile/FF_03CucumberBackground.feature:8[0m
+  [32mGiven [0m[32mopen browser and enter url and navigate to GoodGuys website[0m [90m# StepDefination.SD_01NavigateToWbsite.open_browser_and_enter_url_and_navigate_to_good_guys_website()[0m
+  [32mThen [0m[32mClick on signup link from homepage[0m                           [90m# StepDefination.SD_02SignupPage.click_on_signup_link_from_homepage()[0m
+  [32mGiven [0m[32mfrom the signup page click on CrateAnAccount button[0m         [90m# StepDefination.SD_03Background.from_the_signup_page_click_on_crate_an_account_button()[0m
+  [32mThen [0m[32menter FirstName as MyName[0m                                    [90m# StepDefination.SD_03Background.enter_first_name_as_my_name()[0m
+
+@Regression @Smoke
+Scenario:                        [90m# src/test/java/FeatureFile/FF_04HooksLearning.feature:3[0m
+  [32mGiven [0m[32mthis is the first method[0m [90m# StepDefination.SD_04HooksConceptWithTags.this_is_the_first_method()[0m
+  [32mThen [0m[32mend of first method[0m       [90m# StepDefination.SD_04HooksConceptWithTags.end_of_first_method()[0m
+
+@Regression @Smoke
+Scenario Outline: Scenario Outline: Create an account with valid data   [90m# src/test/java/FeatureFile/FF_05DDTUsingCucumber.feature:8[0m
+  [32mGiven [0m[32muser navigates to Create and account screen[0m                     [90m# StepDefination.SD_05DDTUsingCucumber.user_navigates_to_create_and_account_screen()[0m
+  [32mThen [0m[32menter data [0m[32m[1m"FirstName01"[0m[32m,[0m[32m[1m"LastName01"[0m[32m,[0m[32m[1m"EmailAddress01@gmail.com"[0m [90m# StepDefination.SD_05DDTUsingCucumber.enter_data(java.lang.String,java.lang.String,java.lang.String)[0m
+
+@Regression @Smoke
+Scenario Outline: Scenario Outline: Create an account with valid data   [90m# src/test/java/FeatureFile/FF_05DDTUsingCucumber.feature:9[0m
+  [32mGiven [0m[32muser navigates to Create and account screen[0m                     [90m# StepDefination.SD_05DDTUsingCucumber.user_navigates_to_create_and_account_screen()[0m
+  [32mThen [0m[32menter data [0m[32m[1m"FirstName02"[0m[32m,[0m[32m[1m"LastName02"[0m[32m,[0m[32m[1m"EmailAddress02@gmail.com"[0m [90m# StepDefination.SD_05DDTUsingCucumber.enter_data(java.lang.String,java.lang.String,java.lang.String)[0m
+
+@Regression @Smoke
+Scenario Outline: Scenario Outline: Create an account with valid data   [90m# src/test/java/FeatureFile/FF_05DDTUsingCucumber.feature:10[0m
+  [32mGiven [0m[32muser navigates to Create and account screen[0m                     [90m# StepDefination.SD_05DDTUsingCucumber.user_navigates_to_create_and_account_screen()[0m
+  [32mThen [0m[32menter data [0m[32m[1m"FirstName03"[0m[32m,[0m[32m[1m"LastName03"[0m[32m,[0m[32m[1m"EmailAddress03@gmail.com"[0m [90m# StepDefination.SD_05DDTUsingCucumber.enter_data(java.lang.String,java.lang.String,java.lang.String)[0m
