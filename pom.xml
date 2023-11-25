@@ -107,6 +107,7 @@
               <!-- optional, defaults to outputDirectory if not specified -->
               <!-- <classificationDirectory>${project.build.directory}/</classificationDirectory>  -->
 
+
               <parallelTesting>true</parallelTesting>
               <checkBuildResult>false</checkBuildResult>
             </configuration>
